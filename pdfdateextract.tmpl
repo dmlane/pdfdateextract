@@ -1,0 +1,20 @@
+class Pdfdateextract < Formula
+  include Language::Python::Virtualenv
+
+  desc "Extracts all dates from pdf or the Nth"
+  homepage "https://github.com/dmlane/pdfdateextract"
+  url "#URL#"
+  sha256 "#SHA256#"
+  license "MIT"
+
+  depends_on "python@3.11"
+
+  def install
+    virtualenv_install_with_resources
+  end
+  #---START-RESOURCES---
+  #---END-RESOURCES---
+  test do
+    system "#{bin}/pdfdateextract", "--version"
+  end
+end
