@@ -87,7 +87,7 @@ jobs:
           # If formula file doesn't exist in the tap, copy the skeleton from this repo
           if [ ! -f "tap/${{ env.FORMULA_PATH }}" ]; then
             cp .skel/formula.rb tap/${{ env.FORMULA_PATH }}
-            git add "${{ env.FORMULA_PATH }}"
+            git add tap/${{ env.FORMULA_PATH }}
           fi
           cd tap
 
