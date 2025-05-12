@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pdfdateextract"
-version = "2025.5.3"		# Published version is managed BY bumper
+version = "2025.5.4"		# Published version is managed BY bumper
 description = "Extracts all dates from pdf or the Nth"
 authors = ["Dave Lane <cheery.koala5370@fastmail.com>"]
 license = "MIT"
