@@ -1,6 +1,8 @@
-""" Utility classes and functions"""
+"""Utility classes and functions"""
+
 import argparse
 import textwrap
+
 
 class MyException(Exception):
     """Custom exception class"""
@@ -8,6 +10,7 @@ class MyException(Exception):
     def __init__(self, msg: str, code: int):
         self.code = code
         self.msg = msg
+
 
 class RawFormatter(argparse.HelpFormatter):
     """Help formatter to split the text on newlines and indent each line"""
